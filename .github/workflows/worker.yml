@@ -1,0 +1,15 @@
+name: x
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  github:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wabarc/distributor@main
+        name: Distribute to GitHub
+        env:
+          DISTRIBUTE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISTRIBUTE_CHANNEL: ${{ secrets.DISTRIBUTE_CHANNEL }}
