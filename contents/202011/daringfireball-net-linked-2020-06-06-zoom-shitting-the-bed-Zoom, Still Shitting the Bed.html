@@ -1,0 +1,1280 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="connect-src 'none';"><meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' data:;"><title>Daring Fireball: Zoom, Still Shitting the Bed</title><link rel="apple-touch-icon-precomposed" href="data:image/png;base64,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"><link rel="shortcut icon" href="https://daringfireball.net/graphics/favicon.ico?v=005"><link rel="mask-icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjEwMDBweCIgaGVpZ2h0PSIxMDAwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjQuMiAoMTU4NTUpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlVudGl0bGVkPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9ImRmc3Rhci1jaG9jayIgc2tldGNoOnR5cGU9Ik1TTGF5ZXJHcm91cCIgZmlsbD0iIzAwMDAwMCI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01MDAsMTAwMCBDNzc2LjE0MjM3NSwxMDAwIDEwMDAsNzc2LjE0MjM3NSAxMDAwLDUwMCBDMTAwMCwyMjMuODU3NjI1IDc3Ni4xNDIzNzUsMCA1MDAsMCBDMjIzLjg1NzYyNSwwIDAsMjIzLjg1NzYyNSAwLDUwMCBDMCw3NzYuMTQyMzc1IDIyMy44NTc2MjUsMTAwMCA1MDAsMTAwMCBMNTAwLDEwMDAgWiBNMjgzLjY4ODEwNCw3OTEgTDM2Ny4wMDAwMDIsNTM2LjM4Njk3IEwxNTAsMzc5LjM4OTM2NCBMNDE3LjgwMTQ4MSwzNzkuOTc0OTMgTDUwMCwxMjUgTDU4Mi4xOTg1MiwzNzkuOTc0OTMgTDg1MCwzNzkuMzg5MzY0IEw2MzIuOTk5OTk4LDUzNi4zODY5NyBMNzE2LjMxMTg5Nyw3OTEgTDUwMCw2MzMuMDU0OTI3IEwyODMuNjg4MTA0LDc5MSBaIiBpZD0iU2hhcGUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" color="#4a525a"><style type="text/css">@charset "utf-8";
+
+/*
+	Daring Fireball CSS
+	Copyright (c) 2020 John Gruber. All rights reserved.
+	If you copy without permission, I will mock you.
+	Layout No. 2 / v1.20
+*/
+
+@import "/css/fireball_fontsize.php";
+@import "/css/fireball_unicode.css";
+
+html {
+	/* cf. http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better */
+	height: 100%;
+	margin-bottom: 1px;
+	}
+
+blockquote {
+	font-size: 1em;
+	margin: 2em 2em 2em 1em;
+	padding: 0 .75em 0 1.25em;
+	border-left: 1px solid #777;
+	border-right: 0px solid #777;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+	}
+
+/* 
+blockquote strong {
+	font-weight: bold;
+	font-size: 1em;
+	letter-spacing: normal;
+	text-transform: none;
+	}
+ */
+
+body {
+	-webkit-text-size-adjust: none;
+	margin-top: 0;
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	line-height: 1.8em;
+	color: #fff;
+	text-align: left;
+	min-width: 760px;
+	background-color: #4a525a; /* dark blue slate thing */
+	}
+
+a {
+	text-decoration: none;
+	}
+
+a:link {
+	text-decoration: none;
+	color: #ddd;
+	border-color: #888;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+a:visited {
+	color: #ddd;
+	border-color: #999;
+	border-width: 0 0 1px 0;
+	border-style: none none dotted none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #606870;
+	border-color: #606870;
+	}
+
+a em {
+	padding-bottom: 2px; /* Hack for WebKit; otherwise the underscore padding is 0 */
+	}
+
+
+sup {
+	line-height: 0px;
+	}
+sup a:link {
+	padding: 3px;
+	}
+sup a:visited {
+	padding: 3px;
+	}
+
+
+p {
+ 	margin: 0 0 1.6em 0;
+	padding: 0;
+	}
+
+h1 {
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Georgia, serif;
+	font-size: 1.55em; /* was 1.46em for Georgia */
+	line-height: 1.5em;
+	text-align: left;
+	font-weight: normal;
+	margin: 0em 0px 1.25em 0px;
+	}
+
+h2 {
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 1.05em; /* 1 */
+	text-align: left;
+	font-weight: normal;
+	line-height: 1.8em;
+	letter-spacing: .2em;
+	margin: 4em 0 1em 0;
+	text-transform: uppercase;
+	}
+
+h1 + h2 {
+	margin-top: 2em;
+	}
+h2 + h3 {
+	margin-top: 1.5em;
+	}
+
+h3 {
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: .91em;
+	text-align: left;
+	font-weight: normal;
+	line-height: 1.8em;
+	letter-spacing: .2em;
+	margin-bottom: 1.4em;
+	margin-top: 3em;
+	text-transform: uppercase;
+	}
+
+
+p + h3 {
+	margin-top: 4em;
+	}
+pre + h3 {
+	margin-top: 4em;
+	}
+
+h6 + h2 {
+	margin-top: 2em;
+	}
+
+
+h4, h5, h6 {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 1em;
+	text-align: left;
+	font-weight: bold;
+	line-height: 1.8em;
+	margin: 2em 0 0 0;
+	}
+
+strong {
+	font-weight: normal;
+	font-size: .91em;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	}
+
+em em {
+	font-style: normal;
+	}
+
+strong strong {
+	font-weight: bold;
+	}
+
+cite {
+	font-weight: normal;
+	font-style: italic;
+	}
+
+img {
+	margin-top: 5px;
+	max-width: 100%;
+	}
+
+
+thead {
+	font-weight: bold;
+	}
+
+
+ul, ol {
+	padding-left: 1.25em;
+	margin: 0 0 2em 1em;
+	}
+
+
+pre {
+	font-family: Menlo, Monaco, monospace;
+	line-height: 1.45em;
+	color: #eee;
+	background-color: inherit;
+	margin: 2em 0 2.5em 0;
+	padding: 5px 0 5px 10px;
+	border-width: 1px 0 1px 0;
+	border-color: #6b6b6b;
+	border-style: dashed;
+	}
+
+code {
+	font-family: Menlo, Monaco, monospace;
+	font-size: 1em; /* 1.09em for Courier */
+	}
+
+
+ul {
+	list-style-type: square;
+	}
+
+ul ul {
+	list-style-type: square;
+	}
+ul ul ul {
+	list-style-type: square;
+	}
+
+hr {
+	margin: 2em 1em 4em 0;
+	text-align: center;
+	border-color: #777;
+	border-width: 0;
+	border-style: dotted;
+	}
+
+hr.ookiaks {
+	color: #bbb;
+	margin: 7em 0 11em 0;
+	padding-right: 2em;
+	height: 0;
+	border-width: 0;
+	background-color: inherit;
+	}
+hr.ookiaks-jr {
+	color: #bbb;
+	background-color: inherit;
+	margin: 1em 0 5em 0;
+	padding-right: 2em;
+	height: 0;
+	border-width: 0;
+	}
+
+/*
+	hr.ookiak:after rule that use content: to display bullets
+	is specified in a separate style sheet, saves as UTF-8 with
+	BOM. That way this main sheet can be saved without BOM.
+*/
+
+fieldset {
+	border: 1px dotted #777;
+	padding: 1em 1em .5em 1em;
+	margin: 0 0 2.5em 0;
+	}
+
+fieldset p {
+	margin-bottom: 0;
+	padding-bottom: 1em;
+	}
+
+legend {
+	color: #aaa;
+	background-color: inherit;
+	font-weight: normal;
+	font-size: .91em;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	}
+
+dt {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 1em;
+	text-align: left;
+	font-weight: normal;
+	margin: 0 0 .4em 0;
+	letter-spacing: normal;
+	text-transform: none;
+	}
+dd {
+	margin: auto auto 2.5em 2em;
+	}
+
+dd p {
+	margin: 0 0 1em 0;
+	}
+
+/* 
+::selection {
+	background-color: #73777C;
+	color: white;
+}
+ */
+
+input, select  {
+	font-size: 1em;
+	}
+input[type="text"], input[type="password"]   { background-color: #ddd; }
+/*
+input[type="submit"] { background-color: #ccc;  border-width: 1px; }
+*/
+select { background-color: #ddd; }
+
+audio {
+	height: 3em;
+	width:  100%;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+	audio {
+		height: 150px;
+	}
+}
+
+
+/**** IDs *************************************************************/
+
+#Box {
+	border: 0;
+	width: 720px;
+	height: auto;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	text-align: left;
+	}
+
+
+#Banner {
+	width: 300px;
+	height: auto;
+	border: 0px dotted #606870;
+	padding: 0;
+	margin: 59px 12px 69px 41px;
+	text-align: left;
+	background-color: transparent;
+	line-height: 0px;
+	}
+
+#Banner img {
+	border-width: 0px;
+	}
+
+#Banner img:hover {
+/* 	border: 1px dotted #888; */
+/*	background-color: #575e66;*/
+	background-color: #555e66;
+	}
+
+#Banner a {
+	border-width: 0px;
+	}
+
+#Banner a:hover {
+	background-color: transparent;
+	}
+
+/*** Yogiisms ***/
+#BannerYogi {
+	float: right;
+	margin: -10px -20px 0 0;	/* Regular promos */
+	margin: 0;
+	text-align: right;
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif !important;
+}
+
+#BannerYogi img {
+	border-width: 0px;
+	}
+
+#BannerYogi img:hover {
+	background-color: #555e66;
+	padding-bottom: 20px;
+	}
+
+#BannerYogi a {
+	border-width: 0px;
+	}
+
+#BannerYogi a:hover {
+	background-color: #626a73 !important;
+	}
+
+
+/*** Banner promos: ***/
+
+#BannerPromo {
+	float: right;
+/*	margin: 0 -150px 0 0;		/* New margins for Amazon OS X upgrade promos */
+	margin: -35px -20px 0 0;	/* Regular promos */
+	text-align: right;
+	border: 0px;
+	width: 450px;
+
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
+	font-weight: normal;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+#BannerPromo img {
+	border-color: #727272;
+	border-width: 0px;  /* was: 1px;   */
+	border-style: solid;
+	margin-left: 0px;
+	}
+#BannerPromo img:hover {
+	background-color: #555e66;
+	}
+#BannerPromo a
+{
+	color: transparent;
+	border-color: transparent;
+	padding-bottom: 0px;
+	border-width: 0px;
+}
+/* Doesn't seem to do anything, use class="no_underlines" instead...
+#BannerPromo a:hover {
+	color: red !important;
+	}
+ */
+#BannerPromo a em {
+	padding-bottom: 3px;
+	}
+#BannerPromo strong {
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
+	font-weight: normal;
+	}
+
+
+#Main {
+	padding: 0px;
+	border: 0px dotted gray;
+	position: relative; /* Makes text selection hug text column. */
+	margin-left: 222px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	width: 425px;
+	}
+
+#MainFullWidth {
+	/*
+		Like #Main, but used on pages without #Sidebar; e.g. the Referrers stats page
+	*/
+	padding: 0px;
+	position: relative;
+	border-color: white;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	margin-left: 50px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	}
+
+
+#Sidebar {
+	position: absolute;
+	top: 191px;
+	margin: 0 0 0 -222px; /* IE/Win 6 Workaround Hack */
+/*
+	-- Used this instead of the above for Sidebar positioning from Oct 2003 - Feb 2006
+	-- but abandoned it because of the way IE/Win deals with wider-than-425px elements
+	-- with floating:
+	float: left;
+*/
+	width: 160px;
+	height: auto;
+	border: 0px dotted gray;
+	padding: 5px 0 0 0;
+	background-color: transparent;
+	color: #eee;
+	text-align: right;
+/*
+	font-size: .91em;
+*/
+	line-height: 1em;
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
+	}
+
+
+#Sidebar ul {
+	margin: 0 0 5em -4em;
+	}
+
+#Sidebar li {
+	list-style: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0 0 1em 0;
+	padding: 0;
+	}
+
+#Sidebar p {
+	padding: 0;
+	letter-spacing: 2px;
+	margin: 0 0 5em -3em;
+	}
+
+#Sidebar h2 {
+	font-size: 1em;
+	font-weight: normal;
+	margin-bottom: .25em;
+	margin-top: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	}
+
+#Sidebar strong {
+	font-size: 1em;
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	}
+
+#Sidebar a {
+	color: #eee;
+	padding: 4px 1px 4px 1px;
+	text-decoration: none;
+	}
+#Sidebar a:link {
+	color: #eee;
+	border: 0;
+	}
+#Sidebar a:visited {
+	color: #eee;
+	border: 0;
+	}
+#Sidebar a:hover {
+	color: #fff;
+	}
+
+
+#Splinks {
+	line-height: 1.9em;
+	color: #ccc;
+	margin: 2em 2em 3.5em 0;
+	padding: 3px;
+	border-color: #777;
+	border-width: 1px 0 1px 0;
+	border-style: dotted;
+	}
+#Splinks p {
+	font-size: .91em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 2px;
+	color: #aaa;
+	}
+#Splinks a {
+	color: #ccc;
+	border-color: #777;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	}
+#Splinks a:hover {
+	border-color: #626a73;
+	color: white;
+	}
+#Splinks a:visited {
+	border-color: #888;
+	}
+#Splinks ul {
+	margin: 0 5px .5em 0;
+	padding: 4px 5px 4px 20px;
+	}
+
+
+/* The Deck */
+
+
+#SidebarMartini {
+	border: 0;
+	margin: 10em 0 0 2em;
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 11px;
+	}
+
+#SidebarMartini a:hover {
+	background-color: transparent;
+	}
+
+#SidebarMartini img {
+	border: 0px solid transparent;
+	}
+
+#SidebarMartini img:hover {
+	outline: 2px solid #626a73;
+	}
+
+
+#SidebarMartini p {
+	margin: 8px 0 0 -26px;
+	width: 165px;
+	color: #ccc;
+	letter-spacing: normal;
+	line-height: 1.7em;
+	}
+
+#SidebarMartini p a {
+	padding-bottom: 2px;
+}
+
+#SidebarMartini p a:link {
+	color: #d5d5d5;
+	border-bottom: 1px solid #626a73;
+	}
+#SidebarMartini p a:visited {
+	color: #d5d5d5;
+	border-bottom: 1px solid #626a73;
+	}
+#SidebarMartini p a:hover {
+	background-color: #626a73;
+	color: #eee;
+	}
+
+
+
+#ViaTheDeck {
+	margin-top: 25px !important;
+	}
+#ViaTheDeck a {
+	padding: 5px 0 0 0 !important;
+	border: 0px !important;
+	}
+#ViaTheDeck a:hover {
+	padding: 0;
+	border: 0px !important;
+	background-color: #626a73 !important;
+	}
+#ViaTheDeck img:hover {
+	outline: 0 !important;
+	}
+	
+#ViaTheDeck span { display: none; } /* Hide spans by default on non-retina */
+
+
+/* 2X Retina image replacements */
+@media (-webkit-min-device-pixel-ratio:2) {
+	#ViaTheDeck img { display: none; }
+	#ViaTheDeck a {
+		padding: 0 0 3px 0 !important;
+		}
+	#ViaTheDeck span {
+		padding: 1px 1px 5px 1px;
+		display: inline;
+		font-family: "Gill Sans", Futura, Verdana, sans-serif;
+		font-size: 0.55em;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+		font-weight: normal;
+		color: #d5d5d5;
+	}
+	#ViaTheDeck span:hover {
+		background-color: #626a73;
+	}
+}
+
+
+
+
+
+#SidebarPromo {
+	border: 0;
+	margin-top: 11em; /* Changed tp 3em from 7em 2005-12-27 in response to Safari dupe display bug */
+	padding: 0;
+	font-size: 1.05em;
+	line-height: 1.7em;
+	}
+#SidebarPromo a {
+	display: block;
+	width: 160px;
+	margin: 5px 0 0 0px;
+	text-align: right;
+	color: #ccc;
+	border-color: #777;
+	border-width: 1px 0 1px 0;
+	border-style: dotted;
+	background: transparent;
+	padding: 4px 4px 4px 0;
+}
+#SidebarPromo a:link  {
+	border-color: #777;
+	border-width: 1px 0 1px 0;
+	border-style: dotted;
+	background: transparent;
+	color: #ccc;
+	}
+#SidebarPromo a:visited {
+	border-color: #777;
+	border-width: 1px 0 1px 0;
+	border-style: dotted;
+	background: transparent;
+	color: #ccc;
+	}
+#SidebarPromo a:hover {
+	border-color: #777;
+	border-width: 1px  0  1px  0;
+	border-style: dotted;
+	color: #fff;
+	background: #535c66;
+	}
+#SidebarPromo strong {
+	/* Undo the regular DF strong: */
+	font-weight: normal;
+	font-size: 1em;
+	letter-spacing: normal;
+	text-transform: none;
+	
+	/* Use border-bottom underlining instead: */
+	border-color: #888;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 0 0 1px 0;
+}
+
+#Footer {
+	margin-top: 14em;
+	padding-bottom: 1em;
+	text-align: left;
+	background-color: transparent;
+	}
+
+/* ProjectSubmenu: Cribbed from Waferbaby... */
+
+#ProjectSubmenu {
+	list-style: none outside;
+	padding: 0;
+	margin: 2em 0 1em 0;
+	height: 4em; /* Setting a height makes it act like a block */
+	border: 0px dotted #606870;
+	}
+
+#ProjectSubmenu li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	}
+
+
+#ProjectSubmenu li a,
+#ProjectSubmenu li a:link,
+#ProjectSubmenu li a:visited {
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	display: block;
+	min-width: 45px;
+	padding: 1px 15px 2px 15px;
+	margin: 0;
+	margin-right: -1px;
+	background: transparent;
+	color: #ccc;
+	border-color: #606870;
+	border-width: 1px;
+	border-style: solid;
+	}
+
+#ProjectSubmenu li a.selected,
+#ProjectSubmenu li a.selected:hover {
+	color: #eee;
+	background: #606870;
+	}
+
+#ProjectSubmenu li a:hover {
+	background-color: #535c66;
+	}
+
+#ProjectSubmenu li a:active {
+	color: #eee;
+	background: #606870;
+	}
+
+#PreviousNext {
+	background-color: transparent;
+	padding: 0;
+	margin: 8em 0 0 0;
+	border: 0px dotted gray;
+	color: #aaa;
+	}
+#PreviousNext a:link {
+	color: #ddd;
+}
+#PreviousNext a:visited {
+	color: #ccc;
+}
+
+#prefs {
+	color: #bbb;
+	margin-bottom: 2em;
+	}
+#prefs p {
+	margin: 0;
+	line-height: 2em;
+	}
+
+
+/**** Classes *************************************************************/
+
+.article {
+	background-color: transparent;
+	padding: 0 0 0 0;
+	margin: 0;
+	border-width: 0;
+	border-style: dotted;
+	border-color: gray;
+	color: #eee;
+	}
+
+.article h1 a {
+	color: #eee;
+	text-decoration: none;
+	border: 0;
+	}
+
+.article h1 a:visited {
+	color: #eee;
+	}
+.article img {
+	border: 0px solid #ccc; /* 7 Jan 2011 */
+	}
+.noborder {
+	border: 0px !important;
+}
+
+.bumpleft125 {
+	position: relative; left: -125px; /* /2009/03/safari_4_public_beta */
+}
+
+.archive {
+	background-color: transparent;
+	margin: 0 0 12px 0;
+	padding: 0 0 11em 0;
+	line-height: 2.25em;
+	border-width: 0;
+	color: #eee;
+	}
+
+.archive small {
+	color: #aaa;
+}
+
+.archive p {
+	margin: 0 0 1em 0;
+	padding-left: 2em;
+	text-indent: -2em;
+	line-height: 1.8em;
+	}
+
+.archive a {
+	color: #eee;
+	font-weight: normal;
+	text-decoration: none;
+	border-style: none;
+	}
+
+.headline_list {
+	}
+
+.smallprint {
+	margin-top: 4em;
+	line-height: 1.8em;
+	text-align: left;
+	color: #aaa;
+	}
+.smallprint a:link {
+	color: #ddd;
+	}
+.smallprint a:visited {
+	color: #ddd;
+	}
+
+.timestamp {
+	font-size: 1em;
+	color: #aaa;
+	margin-top: 1em;
+	font-weight: normal;
+	}
+
+.timestamp a {
+	color: #aaa;
+	text-decoration: none;
+	border: 0;
+	}
+.timestamp a:visited { color: #aaa; }
+.timestamp a:hover { color: #fff; }
+
+
+/* Datelines go under article headers: */
+.dateline {
+	font-size: 1em;
+	color: #aaa;
+	margin-top: -.75em;
+	margin-bottom: 1.5em;
+	font-weight: normal;
+	}
+
+.dateline a {
+	color: #aaa;
+	text-decoration: none;
+	border: 0;
+	}
+.dateline a:visited { color: #aaa; }
+.dateline a:hover { color: #fff; }
+h2.dateline {
+	margin: 2em 0 0 0;
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Georgia, serif;
+	}
+dl + h2.dateline {
+	font-size: 0.9em;
+	margin: 8em 0 4em 0;
+	}
+
+
+.stats a {
+	text-decoration: none;
+	border: none;
+	color: #fff;
+	padding: 3px 2px;
+	}
+.stats a:visited {
+	color: #ddd;
+	}
+.stats a:hover {
+	color: #fff;
+	}
+.stats td {
+	white-space: nowrap;
+	padding: 0 5px 0 3px;
+	font-size: 91%;
+	line-height: 1.8em;
+	border-bottom: #666;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	}
+
+.stats {
+	margin-bottom: 2em;
+	}
+
+.article table {
+	margin-left: 2em;
+	margin-bottom: 2.5em;
+	}
+.article td {
+	padding: 0 1.5em 0 0; /* Used to have 3px padding on left, don't know why. */
+	line-height: 1.6em;
+	border: 0 solid #666;
+	}
+.article th {
+	border-bottom: 0px solid #666;
+	padding: 0 1.5em 0 0;
+	font-weight: normal;
+	font-size: .91em;
+	letter-spacing: .2em;
+	line-height: 1em;
+	text-transform: uppercase;
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
+	}
+
+
+.extended {
+	font-style: italic;
+	margin-bottom: 1em;
+	}
+
+.question {
+	font-style: italic;
+	}
+
+.question em {
+	font-style: normal;
+	}
+
+.name {
+	font-family: "Gill Sans", Verdana, "Bitstream Vera Sans", sans-serif;
+	position: relative;
+	left: -1.75em;
+	font-size: 1em;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-style: normal;
+	margin-right: -1.5em; /* Compensate for extra space after positioning */
+	}
+
+.interview p {
+	margin-left: 1.75em; /* Should be equivalent to value for .name left: */
+	}
+
+.interview strong {
+	font-family: "Gill Sans", Verdana, "Bitstream Vera Sans", sans-serif;
+	position: relative;
+	left: -1.75em;
+	font-size: 1em;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-style: normal;
+	margin-right: -1.5em; /* Compensate for extra space after positioning */
+}	
+
+.interview blockquote p {
+	margin-left: 1.5em; /* Without this, the names (strong) are crossed by the blockquote line */
+	                    /* https://daringfireball.net/linked/2018/07/18/swisher-zuckerberg */
+}
+
+.blockquote-extra-spacing blockquote {
+	margin-top: 3em;
+	}
+
+.blackborder {
+	border-color: #000;
+	border-width: 1px;
+	border-style: solid;
+	}
+
+.plug {
+	margin-top: 120px;
+	}
+
+/**** Promos for the AdSense slot: ****/
+.promo img {
+	border-color: #727272;
+	border-width: 1px;
+	border-style: solid;
+	margin: -40px auto 100px auto;
+	}
+.promo img:hover {
+	border-color: #999;
+	}
+.promo a       { border: 0; background: transparent; }
+.promo a:link  { border: 0; }
+.promo a:hover { border: 0; }
+
+
+
+.caps {
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: .91em;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.photo img {
+	border: 4px solid #eee;
+	}
+
+.thumbnailphoto {
+	background-color: transparent;
+	}
+.thumbnailphoto a {
+	border-width: 0;
+	border-style: none;
+	background-color: transparent;
+	}
+.thumbnailphoto a:hover {
+	border-width: 0;
+	}
+.thumbnailphoto a:link {
+	border-width: 0;
+	}
+.thumbnailphoto a:visited {
+	border-width: 0;
+	}
+.thumbnailphoto img {
+	border: 2px solid #eee;
+	}
+.thumbnailphoto img:hover {
+	border: 2px solid #70787f;
+	}
+
+/**** Linked List ********/
+.article + .article {
+	margin-top: 10em;
+	}
+/*
+.article + .linkedlist {
+	border-top-width: 1px;
+	padding-top: 3em;
+	}
+*/
+.linkedlist {
+	color: #eee;
+	border-width: 0 0 0px 0;
+	border-style: solid;
+	border-color: #666;
+	padding-bottom: 0em;
+	}
+.linkedlist dt {
+	margin-bottom: 1em;
+	margin-top: 2em;
+	font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1.05em;
+	}
+.linkedlist dt a {
+	padding-top: 2px;
+	padding-bottom: 0px;
+	color: #ccc;
+	}
+.linkedlist dt a:link {
+	border-style: solid;
+	border-color: #72767A;
+	}
+.linkedlist dt a:visited {
+	border-style: dotted;
+	border-color: #72767A;
+	}
+.linkedlist dt a:hover {
+	color: white;
+	}
+.linkedlist dd {
+	margin: auto auto 5em 0em;
+	}
+.linkedlist p {
+	margin: 0 0 1.6em 0;
+	}
+.linkedlist ul {
+	margin: 0 0 1em .5em;
+	}
+.linkedlist ol {
+	margin: 0 0 1em .5em;
+	}
+.linkedlist blockquote {
+	margin: 0 1em 0 0.25em;
+	padding: 0 .75em 0 1em;
+	border-left: 1px solid #777;
+	border-right: 0px solid #777;
+	color: #ddd;
+	}
+.linkedlist blockquote a {
+	color: #ccc;
+	}
+.linkedlist blockquote ol {
+	margin-left: 10px;
+	}
+.linkedlist blockquote ul {
+	margin-left: 10px;
+	}
+
+.linkedlist + .smallprint {
+	margin-top: 150px;
+	}
+.linkedlist + .article {
+	margin-top: 100px;
+	}
+
+.articlelist dt {
+	font-weight: bold;
+	}
+
+.linkedlist a.permalink, a.permalink {
+	color: #bbb;
+	border: 0;
+	padding: 3px 3px 3px 5px; /* left side needs extra padding, don't know why */
+	margin-left: .5em;
+	font-family: "Hiragino Kaku Gothic Pro", "Osaka", "Zapf Dingbats";
+	}
+
+dt:hover a.permalink { color: #eee; }
+h2:hover a.permalink { color: #eee; padding: 3px; }
+h3:hover a.permalink { color: #eee; }
+
+.article a.permalink {
+	color: #bbb;  /* was 606870 -- too low in contrast */
+	}
+.article a.permalink:hover {
+	color: #eee;
+	}
+
+a.no_underlines {
+	border-width: 0;
+	}
+a.no_underlines:hover {
+	background: transparent;
+	}
+
+p.footnotes {
+	font-size: .91em;
+	text-indent: -1em;
+	padding-left: 1em;
+	}
+.footnotes hr {
+	margin-left: 0;
+	margin-bottom: 1.5em;
+	margin-top: 5em;
+	width: 8em;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	}
+.footnotes hr:after {
+	content: "";
+	}
+.footnotes p {
+	font-size: .91em;
+	}
+a.footnoteBackLink {
+	border: 0;
+	padding: 3px 4px 2px 4px;
+	vertical-align: -.2em;
+	font-size: 1.2em;
+	line-height: 0px;
+	color: #bbb;
+	}
+a.footnoteBackLink:hover {
+	color: #fff;
+	}
+
+.roundrect {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	}
+.highlightOnHover:hover {
+	background:#555e66;
+}
+
+/* Subtle Scrollbar by Neven Mrgan */
+.subtleScroll::-webkit-scrollbar-track {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.02)), to(rgba(0,0,0,0)));
+    border: 1px solid rgba(255,255,255,.15);
+    -webkit-border-radius: 5px;
+}
+
+.subtleScroll::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.subtleScroll::-webkit-scrollbar-track-piece:disabled {
+    display: none !important;
+}
+.subtleScroll::-webkit-scrollbar-thumb {
+	background-color: rgba(255,255,255,.4);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.2)));
+    border: 0px solid;
+    -webkit-border-radius: 5px;
+}
+.subtleScroll::-webkit-scrollbar-thumb:active {
+	background-color: rgba(255,255,255,.6);
+}
+
+
+
+/* Workaround for ImageZoom white boxes in non-Safari browsers
+	24 Apr 2020 - Commented out. No longer needed? Was interfering
+	with Safari on iOS 13 -- zoomed images were squished.
+ */
+/* 
+#ShadowBox img, #ZoomBox img { margin-top: 0px; }
+ */
+
+
+
+/**** Colors ***************************************************
+
+	Darker 30:			#3e454c;
+						#3f464c;
+	Slate BG:			#4a525a;
+	Adsense BG:			#535c66;
+	SmartyPants BG:		#606870;
+	Link:hover:			#626a73;
+
+	Link:bottom:		#999;
+	AdSense Border:		#727272;
+	Blockquote rule:	#777;
+	Stats Rule:			#666;
+
+****************************************************************/</style><style type="text/css">html>body div#Sidebar{top:189px;margin:0}</style><style type="text/css">body{background:#fff;color:#000;font-size:12pt;font-family:"Helvetica Neue",Helvetica,Verdana,sans-serif}p{margin:0 0 15pt 0;padding:0}#Sidebar{display:block}#Sidebar ul{display:none}#SidebarPromo{display:none}#Main,#MainFullWidth{width:auto;color:#000}.article{margin:0 0 12pt 0;padding:0 50pt 4em 35pt;font-size:9pt;line-height:1.5em;width:40em;border-color:#000;border-width:1pt}.article h1{font-family:Georgia,serif;font-size:14pt;text-align:left;font-weight:700;margin:0 0 .75em 0}.article h1 a{text-decoration:none;border:0}.article h2{font-size:1em;text-align:left;font-weight:400;margin:36pt 0 18pt 0;text-transform:uppercase;letter-spacing:.2em}.article h3 h4 h5 h6{font-size:.9em;text-align:left;font-weight:400;margin:24pt 0 0 0;text-transform:uppercase;letter-spacing:.2em}.article pre{font-family:CourierX,Courier,"Courier New",monospace;font-size:10pt;line-height:13pt;margin-left:2em}.article blockquote{font-size:85%;line-height:1.5em}.article cite{font-weight:400;font-style:italic}.article img{margin-top:5pt}a:link,a:visited{color:#333;background:0 0;text-decoration:underline}code{font-family:CourierX,Courier,"Courier New",monospace;font-size:90%}.dateline{font-size:85%;color:#666;font-weight:400;text-align:right;width:100%;background-color:transparent;border-width:0;margin:1em 0 0 0;text-transform:uppercase;letter-spacing:.1em}.smallprint{margin-top:5pt;font-size:60%;line-height:1.3em;text-align:center;background-color:transparent}.timestamp{font-size:90%;color:#333;margin-top:10pt;margin-bottom:15pt}.lastline a{text-decoration:none}.referrerstable{display:none}.adsense{display:none}.question{font-style:italic}.question em{font-style:normal}.name{position:relative;left:-1.75em;font-size:.9em;letter-spacing:.2em;text-transform:uppercase;font-style:normal;margin-right:-1.5em}.interview p{margin-left:1.75em}</style><link rel="alternate" type="application/atom+xml" href="https://daringfireball.net/feeds/main"><link rel="alternate" type="application/json" href="https://daringfireball.net/feeds/json"><script type="text/javascript">var includeCaption=!0,zoomTime=5,zoomSteps=15,includeFade=1,minBorder=90,shadowSettings="0px 5px 25px rgba(0, 0, 0, ",zoomImagesURI="/js/images-global/zoom/",myWidth=0,myHeight=0,myScroll=0;myScrollWidth=0,myScrollHeight=0;var zoomOpen=!1,preloadFrame=1,preloadActive=!1,preloadTime=0,imgPreload=new Image,preloadAnimTimer=0,zoomActive=new Array,zoomTimer=new Array,zoomOrigW=new Array,zoomOrigH=new Array,zoomOrigX=new Array,zoomOrigY=new Array,zoomID="ZoomBox",theID="ZoomImage",zoomCaption="ZoomCaption",zoomCaptionDiv="ZoomCapDiv",browserIsIE;function setupZoom(){prepZooms(),insertZoomHTML(),zoomdiv=document.getElementById(zoomID),zoomimg=document.getElementById(theID)}function prepZooms(){if(document.getElementsByTagName){var e=document.getElementsByTagName("a");for(i=0;i<e.length;i++)e[i].getAttribute("href")&&-1!=e[i].getAttribute("href").search(/(.*)\.(jpg|jpeg|gif|png|bmp|tif|tiff)/gi)&&"nozoom"!=e[i].getAttribute("rel")&&(e[i].onclick=function(e){return zoomClick(this,e)},e[i].onmouseover=function(){zoomPreload(this)})}}function zoomPreload(e){var o=e.getAttribute("href");-1==imgPreload.src.indexOf(e.getAttribute("href").substr(e.getAttribute("href").lastIndexOf("/")))&&(preloadActive=!0,(imgPreload=new Image).onload=function(){preloadActive=!1},imgPreload.src=o)}function preloadAnimStart(){preloadTime=new Date,document.getElementById("ZoomSpin").style.left=myWidth/2+"px",document.getElementById("ZoomSpin").style.top=myHeight/2+myScroll+"px",document.getElementById("ZoomSpin").style.visibility="visible",preloadFrame=1,document.getElementById("SpinImage").src=zoomImagesURI+"zoom-spin-"+preloadFrame+".png",preloadAnimTimer=setInterval("preloadAnim()",100)}function preloadAnim(e){0!=preloadActive?(document.getElementById("SpinImage").src=zoomImagesURI+"zoom-spin-"+preloadFrame+".png",12<++preloadFrame&&(preloadFrame=1)):(document.getElementById("ZoomSpin").style.visibility="hidden",clearInterval(preloadAnimTimer),preloadAnimTimer=0,zoomIn(preloadFrom))}function zoomClick(e,o){var t=getShift(o);return!(o||!window.event||!window.event.metaKey&&!window.event.altKey)||(!(!o||!o.metaKey&&!o.altKey)||(getSize(),1==preloadActive?0==preloadAnimTimer&&(preloadFrom=e,preloadAnimStart()):zoomIn(e,t),!1))}function zoomIn(e,o){zoomimg.src=e.getAttribute("href"),startPos=e.childNodes[0].width?(startW=e.childNodes[0].width,startH=e.childNodes[0].height,findElementPos(e.childNodes[0])):(startW=50,startH=12,findElementPos(e)),hostX=startPos[0],hostY=startPos[1],document.getElementById("scroller")&&(hostX-=document.getElementById("scroller").scrollLeft),endW=imgPreload.width,endH=imgPreload.height,1!=zoomActive[theID]&&(document.getElementById("ShadowBox")?document.getElementById("ShadowBox").style.visibility="hidden":browserIsIE||(fadeActive.ZoomImage&&(clearInterval(fadeTimer.ZoomImage),fadeActive.ZoomImage=!1,fadeTimer.ZoomImage=!1),document.getElementById("ZoomImage").style.webkitBoxShadow=shadowSettings+"0.0)"),document.getElementById("ZoomClose").style.visibility="hidden",includeCaption&&(document.getElementById(zoomCaptionDiv).style.visibility="hidden",e.getAttribute("title")&&includeCaption?document.getElementById(zoomCaption).innerHTML=e.getAttribute("title"):document.getElementById(zoomCaption).innerHTML=""),zoomOrigW[theID]=startW,zoomOrigH[theID]=startH,zoomOrigX[theID]=hostX,zoomOrigY[theID]=hostY,zoomimg.style.width=startW+"px",zoomimg.style.height=startH+"px",zoomdiv.style.left=hostX+"px",zoomdiv.style.top=hostY+"px",1==includeFade&&setOpacity(0,zoomID),zoomdiv.style.visibility="visible",sizeRatio=endW/endH,endW>myWidth-minBorder&&(endW=myWidth-minBorder,endH=endW/sizeRatio),endH>myHeight-minBorder&&(endH=myHeight-minBorder,endW=endH*sizeRatio),zoomChangeX=myWidth/2-endW/2-hostX,zoomChangeY=myHeight/2-endH/2-hostY+myScroll,zoomChangeW=endW-startW,zoomChangeH=endH-startH,tempSteps=o?7*zoomSteps:zoomSteps,zoomCurrent=0,fadeAmount=1==includeFade?(fadeCurrent=0,-100/tempSteps):0,zoomTimer[theID]=setInterval("zoomElement('"+zoomID+"', '"+theID+"', "+zoomCurrent+", "+startW+", "+zoomChangeW+", "+startH+", "+zoomChangeH+", "+hostX+", "+zoomChangeX+", "+hostY+", "+zoomChangeY+", "+tempSteps+", "+includeFade+", "+fadeAmount+", 'zoomDoneIn(zoomID)')",zoomTime),zoomActive[theID]=!0)}function zoomOut(e,o){tempSteps=getShift(o)?7*zoomSteps:zoomSteps,1!=zoomActive[theID]&&(document.getElementById("ShadowBox")?document.getElementById("ShadowBox").style.visibility="hidden":browserIsIE||(fadeActive.ZoomImage&&(clearInterval(fadeTimer.ZoomImage),fadeActive.ZoomImage=!1,fadeTimer.ZoomImage=!1),document.getElementById("ZoomImage").style.webkitBoxShadow=shadowSettings+"0.0)"),document.getElementById("ZoomClose").style.visibility="hidden",includeCaption&&""!=document.getElementById(zoomCaption).innerHTML&&(document.getElementById(zoomCaptionDiv).style.visibility="hidden"),startX=parseInt(zoomdiv.style.left),startY=parseInt(zoomdiv.style.top),startW=zoomimg.width,startH=zoomimg.height,zoomChangeX=zoomOrigX[theID]-startX,zoomChangeY=zoomOrigY[theID]-startY,zoomChangeW=zoomOrigW[theID]-startW,zoomChangeH=zoomOrigH[theID]-startH,zoomCurrent=0,fadeAmount=1==includeFade?(fadeCurrent=0,100/tempSteps):0,zoomTimer[theID]=setInterval("zoomElement('"+zoomID+"', '"+theID+"', "+zoomCurrent+", "+startW+", "+zoomChangeW+", "+startH+", "+zoomChangeH+", "+startX+", "+zoomChangeX+", "+startY+", "+zoomChangeY+", "+tempSteps+", "+includeFade+", "+fadeAmount+", 'zoomDone(zoomID, theID)')",zoomTime),zoomActive[theID]=!0)}function zoomDoneIn(e,o){zoomOpen=!0,e=document.getElementById(e),document.getElementById("ShadowBox")?(setOpacity(0,"ShadowBox"),shadowdiv=document.getElementById("ShadowBox"),shadowLeft=parseInt(e.style.left)-13,shadowTop=parseInt(e.style.top)-8,shadowWidth=e.offsetWidth+26,shadowHeight=e.offsetHeight+26,shadowdiv.style.width=shadowWidth+"px",shadowdiv.style.height=shadowHeight+"px",shadowdiv.style.left=shadowLeft+"px",shadowdiv.style.top=shadowTop+"px",document.getElementById("ShadowBox").style.visibility="visible",fadeElementSetup("ShadowBox",0,100,5)):browserIsIE||fadeElementSetup("ZoomImage",0,.8,5,0,"shadow"),includeCaption&&""!=document.getElementById(zoomCaption).innerHTML&&(zoomcapd=document.getElementById(zoomCaptionDiv),zoomcapd.style.top=parseInt(e.style.top)+(e.offsetHeight+15)+"px",zoomcapd.style.left=myWidth/2-zoomcapd.offsetWidth/2+"px",zoomcapd.style.visibility="visible"),browserIsIE||setOpacity(0,"ZoomClose"),document.getElementById("ZoomClose").style.visibility="visible",browserIsIE||fadeElementSetup("ZoomClose",0,100,5),document.onkeypress=getKey}function zoomDone(e,o){zoomOpen=!1,zoomOrigH[o]="",zoomOrigW[o]="",document.getElementById(e).style.visibility="hidden",zoomActive[o],document.onkeypress=null}function zoomElement(zoomdiv,theID,zoomCurrent,zoomStartW,zoomChangeW,zoomStartH,zoomChangeH,zoomStartX,zoomChangeX,zoomStartY,zoomChangeY,zoomSteps,includeFade,fadeAmount,execWhenDone){zoomCurrent==zoomSteps+1?(zoomActive[theID]=!1,clearInterval(zoomTimer[theID]),""!=execWhenDone&&eval(execWhenDone)):(1==includeFade&&setOpacity(fadeAmount<0?Math.abs(zoomCurrent*fadeAmount):100-zoomCurrent*fadeAmount,zoomdiv),moveW=cubicInOut(zoomCurrent,zoomStartW,zoomChangeW,zoomSteps),moveH=cubicInOut(zoomCurrent,zoomStartH,zoomChangeH,zoomSteps),moveX=cubicInOut(zoomCurrent,zoomStartX,zoomChangeX,zoomSteps),moveY=cubicInOut(zoomCurrent,zoomStartY,zoomChangeY,zoomSteps),document.getElementById(zoomdiv).style.left=moveX+"px",document.getElementById(zoomdiv).style.top=moveY+"px",zoomimg.style.width=moveW+"px",zoomimg.style.height=moveH+"px",zoomCurrent++,clearInterval(zoomTimer[theID]),zoomTimer[theID]=setInterval("zoomElement('"+zoomdiv+"', '"+theID+"', "+zoomCurrent+", "+zoomStartW+", "+zoomChangeW+", "+zoomStartH+", "+zoomChangeH+", "+zoomStartX+", "+zoomChangeX+", "+zoomStartY+", "+zoomChangeY+", "+zoomSteps+", "+includeFade+", "+fadeAmount+", '"+execWhenDone+"')",zoomTime))}function getKey(e){theKey=(e||event).keyCode,27==theKey&&zoomOut(this,e)}function fadeOut(e){e.id&&fadeElementSetup(e.id,100,0,10)}function fadeIn(e){e.id&&fadeElementSetup(e.id,0,100,10)}-1!=navigator.userAgent.indexOf("MSIE")&&(browserIsIE=!0);var fadeActive=new Array,fadeQueue=new Array,fadeTimer=new Array,fadeClose=new Array,fadeMode=new Array;function fadeElementSetup(e,o,t,n,m,i){1==fadeActive[e]?fadeQueue[e]=new Array(e,o,t,n):(fadeSteps=n,fadeCurrent=0,fadeAmount=(o-t)/fadeSteps,fadeTimer[e]=setInterval("fadeElement('"+e+"', '"+fadeCurrent+"', '"+fadeAmount+"', '"+fadeSteps+"')",15),fadeActive[e]=!0,fadeMode[e]=i,fadeClose[e]=1==m)}function fadeElement(e,o,t,n){o==n?(clearInterval(fadeTimer[e]),fadeActive[e]=!1,fadeTimer[e]=!1,1==fadeClose[e]&&(document.getElementById(e).style.visibility="hidden"),fadeQueue[e]&&0!=fadeQueue[e]&&(fadeElementSetup(fadeQueue[e][0],fadeQueue[e][1],fadeQueue[e][2],fadeQueue[e][3]),fadeQueue[e]=!1)):(o++,"shadow"==fadeMode[e]?document.getElementById(e).style.webkitBoxShadow=t<0?shadowSettings+Math.abs(o*t)+")":shadowSettings+(100-o*t)+")":setOpacity(t<0?Math.abs(o*t):100-o*t,e),clearInterval(fadeTimer[e]),fadeTimer[e]=setInterval("fadeElement('"+e+"', '"+o+"', '"+t+"', '"+n+"')",15))}function setOpacity(e,o){o=document.getElementById(o).style;-1!=navigator.userAgent.indexOf("Firefox")&&100==e&&(e=99.9999),o.filter="alpha(opacity="+e+")",o.opacity=e/100}function linear(e,o,t,n){return t*e/n+o}function sineInOut(e,o,t,n){return-t/2*(Math.cos(Math.PI*e/n)-1)+o}function cubicIn(e,o,t,n){return t*(e/=n)*e*e+o}function cubicOut(e,o,t,n){return t*((e=e/n-1)*e*e+1)+o}function cubicInOut(e,o,t,n){return(e/=n/2)<1?t/2*e*e*e+o:t/2*((e-=2)*e*e+2)+o}function bounceOut(e,o,t,n){return(e/=n)<1/2.75?t*(7.5625*e*e)+o:e<2/2.75?t*(7.5625*(e-=1.5/2.75)*e+.75)+o:e<2.5/2.75?t*(7.5625*(e-=2.25/2.75)*e+.9375)+o:t*(7.5625*(e-=2.625/2.75)*e+.984375)+o}function getSize(){self.innerHeight?(myWidth=window.innerWidth,myHeight=window.innerHeight,myScroll=window.pageYOffset):document.documentElement&&document.documentElement.clientHeight?(myWidth=document.documentElement.clientWidth,myHeight=document.documentElement.clientHeight,myScroll=document.documentElement.scrollTop):document.body&&(myWidth=document.body.clientWidth,myHeight=document.body.clientHeight,myScroll=document.body.scrollTop),myScrollHeight=window.innerHeight&&window.scrollMaxY?(myScrollWidth=document.body.scrollWidth,window.innerHeight+window.scrollMaxY):document.body.scrollHeight>document.body.offsetHeight?(myScrollWidth=document.body.scrollWidth,document.body.scrollHeight):(myScrollWidth=document.body.offsetWidth,document.body.offsetHeight)}function getShift(e){var o=!1;return!e&&window.event?o=window.event.shiftKey:e&&(o=e.shiftKey)&&e.stopPropagation(),o}function findElementPos(e){for(var o=0,t=0;o+=e.offsetLeft,t+=e.offsetTop,e=e.offsetParent;);return Array(o,t)}</script><script type="text/javascript">function insertZoomHTML(){var t=document.getElementsByTagName("body").item(0),e=document.createElement("div");e.setAttribute("id","ZoomSpin"),e.style.position="absolute",e.style.left="10px",e.style.top="10px",e.style.visibility="hidden",e.style.zIndex="525",t.insertBefore(e,t.firstChild);var i=document.createElement("img");i.setAttribute("id","SpinImage"),i.setAttribute("src",zoomImagesURI+"zoom-spin-1.png"),e.appendChild(i);var o=document.createElement("div");o.setAttribute("id","ZoomBox"),o.style.position="absolute",o.style.left="10px",o.style.top="10px",o.style.visibility="hidden",o.style.zIndex="499",t.insertBefore(o,e.nextSibling);var s=document.createElement("img");s.onclick=function(t){return zoomOut(this,t),!1},s.setAttribute("src",zoomImagesURI+"spacer.gif"),s.setAttribute("id","ZoomImage"),s.setAttribute("border","0"),s.setAttribute("style","-webkit-box-shadow: "+shadowSettings+"0.0)"),s.style.display="block",s.style.width="10px",s.style.height="10px",s.style.cursor="pointer",o.appendChild(s);var d,i=document.createElement("div");switch(i.setAttribute("id","ZoomClose"),i.style.position="absolute",browserIsIE?(i.style.left="-1px",i.style.top="0px"):(i.style.left="-15px",i.style.top="-15px"),i.style.visibility="hidden",o.appendChild(i),window.devicePixelRatio){case 2:d="closebox@2x.png";break;case 3:d="closebox@3x.png";break;default:d="closebox.png"}var l,e=document.createElement("img");e.onclick=function(t){return zoomOut(this,t),!1},e.setAttribute("src",zoomImagesURI+d),e.setAttribute("width","30"),e.setAttribute("height","30"),e.setAttribute("border","0"),e.style.cursor="pointer",i.appendChild(e),document.getElementById("ZoomImage").style.webkitBoxShadow||browserIsIE||((s=document.createElement("div")).setAttribute("id","ShadowBox"),s.style.position="absolute",s.style.left="50px",s.style.top="50px",s.style.width="100px",s.style.height="100px",s.style.visibility="hidden",s.style.zIndex="498",t.insertBefore(s,o.nextSibling),(l=document.createElement("table")).setAttribute("border","0"),l.setAttribute("width","100%"),l.setAttribute("height","100%"),l.setAttribute("cellpadding","0"),l.setAttribute("cellspacing","0"),s.appendChild(l),i=document.createElement("tbody"),l.appendChild(i),(e=document.createElement("tr")).style.height="25px",i.appendChild(e),(s=document.createElement("td")).style.width="27px",e.appendChild(s),(l=document.createElement("img")).setAttribute("src",zoomImagesURI+"zoom-shadow1.png"),l.setAttribute("width","27"),l.setAttribute("height","25"),l.style.display="block",s.appendChild(l),(s=document.createElement("td")).setAttribute("background",zoomImagesURI+"zoom-shadow2.png"),e.appendChild(s),(l=document.createElement("img")).setAttribute("src",zoomImagesURI+"spacer.gif"),l.setAttribute("height","1"),l.setAttribute("width","1"),l.style.display="block",s.appendChild(l),(l=document.createElement("td")).style.width="27px",e.appendChild(l),(e=document.createElement("img")).setAttribute("src",zoomImagesURI+"zoom-shadow3.png"),e.setAttribute("width","27"),e.setAttribute("height","25"),e.style.display="block",l.appendChild(e),inRow2=document.createElement("tr"),i.appendChild(inRow2),(l=document.createElement("td")).setAttribute("background",zoomImagesURI+"zoom-shadow4.png"),inRow2.appendChild(l),(e=document.createElement("img")).setAttribute("src",zoomImagesURI+"spacer.gif"),e.setAttribute("height","1"),e.setAttribute("width","1"),e.style.display="block",l.appendChild(e),(l=document.createElement("td")).setAttribute("bgcolor","#ffffff"),inRow2.appendChild(l),(e=document.createElement("img")).setAttribute("src",zoomImagesURI+"spacer.gif"),e.setAttribute("height","1"),e.setAttribute("width","1"),e.style.display="block",l.appendChild(e),(l=document.createElement("td")).setAttribute("background",zoomImagesURI+"zoom-shadow5.png"),inRow2.appendChild(l),(e=document.createElement("img")).setAttribute("src",zoomImagesURI+"spacer.gif"),e.setAttribute("height","1"),e.setAttribute("width","1"),e.style.display="block",l.appendChild(e),(l=document.createElement("tr")).style.height="26px",i.appendChild(l),(e=document.createElement("td")).style.width="27px",l.appendChild(e),(i=document.createElement("img")).setAttribute("src",zoomImagesURI+"zoom-shadow6.png"),i.setAttribute("width","27"),i.setAttribute("height","26"),i.style.display="block",e.appendChild(i),(e=document.createElement("td")).setAttribute("background",zoomImagesURI+"zoom-shadow7.png"),l.appendChild(e),(i=document.createElement("img")).setAttribute("src",zoomImagesURI+"spacer.gif"),i.setAttribute("height","1"),i.setAttribute("width","1"),i.style.display="block",e.appendChild(i),(i=document.createElement("td")).style.width="27px",l.appendChild(i),(l=document.createElement("img")).setAttribute("src",zoomImagesURI+"zoom-shadow8.png"),l.setAttribute("width","27"),l.setAttribute("height","26"),l.style.display="block",i.appendChild(l)),includeCaption&&((l=document.createElement("div")).setAttribute("id","ZoomCapDiv"),l.style.position="absolute",l.style.visibility="hidden",l.style.marginLeft="auto",l.style.marginRight="auto",l.style.zIndex="501",t.insertBefore(l,o.nextSibling),(t=document.createElement("table")).setAttribute("border","0"),t.setAttribute("cellPadding","0"),t.setAttribute("cellSpacing","0"),l.appendChild(t),o=document.createElement("tbody"),t.appendChild(o),l=document.createElement("tr"),o.appendChild(l),(t=document.createElement("td")).setAttribute("align","right"),l.appendChild(t),(o=document.createElement("img")).setAttribute("src",zoomImagesURI+"zoom-caption-l.png"),o.setAttribute("width","13"),o.setAttribute("height","26"),o.style.display="block",t.appendChild(o),(o=document.createElement("td")).setAttribute("background",zoomImagesURI+"zoom-caption-fill.png"),o.setAttribute("id","ZoomCaption"),o.setAttribute("valign","middle"),o.style.fontSize="14px",o.style.fontFamily="Helvetica",o.style.fontWeight="bold",o.style.color="#ffffff",o.style.textShadow="0px 2px 4px #000000",o.style.whiteSpace="nowrap",l.appendChild(o),o=document.createElement("td"),l.appendChild(o),(l=document.createElement("img")).setAttribute("src",zoomImagesURI+"zoom-caption-r.png"),l.setAttribute("width","13"),l.setAttribute("height","26"),l.style.display="block",o.appendChild(l))}</script><link rel="home" href="https://daringfireball.net/" title="Home"><link rel="shorturl" href="https://df4.us/shz"><link rel="prev" href="https://daringfireball.net/linked/2020/06/05/nfl-black-lives-matter" title="‘We, the NFL, Believe Black Lives Matter’"><link rel="next" href="https://daringfireball.net/linked/2020/06/07/protests-around-the-world" title="Bird’s Eye View of Protests Across the U.S. and Around the World"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@daringfireball"><meta name="twitter:creator" content="@gruber"><meta name="twitter:title" content="Zoom, Still Shitting the Bed"><meta name="twitter:description" content="Link to: https://www.bloomberg.com/news/articles/2020-06-02/zoom-transforms-hype-into-huge-jump-in-sales-customers"><meta name="twitter:image" content="https://daringfireball.net/graphics/df-square-1024.png"><meta property="og:site_name" content="Daring Fireball"><meta property="og:title" content="Zoom, Still Shitting the Bed"><meta property="og:url" content="https://daringfireball.net/linked/2020/06/06/zoom-shitting-the-bed"><meta property="og:description" content="Link to: https://www.bloomberg.com/news/articles/2020-06-02/zoom-transforms-hype-into-huge-jump-in-sales-customers"><meta property="og:image" content="https://daringfireball.net/graphics/df-square-1024.png"><meta property="og:type" content="article"><meta property="site_name" content="Daring Fireball"><meta property="title" content="Zoom, Still Shitting the Bed"><meta property="url" content="https://daringfireball.net/linked/2020/06/06/zoom-shitting-the-bed"><meta property="description" content="Link to: https://www.bloomberg.com/news/articles/2020-06-02/zoom-transforms-hype-into-huge-jump-in-sales-customers"><meta property="image" content="https://daringfireball.net/graphics/df-square-1024.png"><meta property="type" content="article"><meta property="wayback:source:url" content="https://daringfireball.net/linked/2020/06/06/zoom-shitting-the-bed"></head><body><div id="Box"><div id="BannerYogi"><a style="font-family:'Gill Sans',Verdana,sans-serif;font-size:1.2em;padding:20px" href="https://buildbackbetter.com/">64</a></div><div id="Banner"><a href="https://daringfireball.net/" title="Daring Fireball: Home"><img src="data:image/png;base64,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" alt="Daring Fireball" height="56"></a></div><div id="Sidebar"><p>By <strong>John Gruber</strong></p><ul><li><a href="https://daringfireball.net/archive/" title="Previous articles.">Archive</a></li><li><script type="text/javascript">function ReadCookie(i){for(var e=i+"=",n=document.cookie.split(";"),l=0;l<n.length;l++){for(var t=n[l];" "==t.charAt(0);)t=t.substring(1,t.length);if(0==t.indexOf(e))return t.substring(e.length,t.length)}return null}var display_linked_list=ReadCookie("displayLinkedList"),li_linked='<a href="/linked/" title="The Linked List.">Linked List</a>';"hide"==display_linked_list&&document.write(li_linked+"</li>\n<li>")</script></li><li><a href="https://daringfireball.net/thetalkshow/" title="America’s favorite 3-star podcast.">The Talk Show</a></li><li><a href="https://dithering.fm/" title="Three episodes per week, 15 minutes per episode. Not a minute less, not a minute more.">Dithering</a></li><li><a href="https://daringfireball.net/projects/" title="Software projects, including SmartyPants and Markdown.">Projects</a></li><li><a href="https://daringfireball.net/contact/" title="How to send email or feedback regarding Daring Fireball.">Contact</a></li><li><a href="https://daringfireball.net/colophon/" title="About this site and the tools used to produce it.">Colophon</a></li><li><a href="https://daringfireball.net/feeds/">RSS Feed</a></li><li><a href="https://twitter.com/daringfireball">Twitter</a></li><li><a href="https://daringfireball.net/feeds/sponsors/">Sponsorship</a></li></ul><div id="SidebarMartini"><a href="https://atoms.com/df"><img alt="Atoms" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMsaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0OCA3OS4xNjQwMzYsIDIwMTkvMDgvMTMtMDE6MDY6NTcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMDIwIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0OTQ0RTBGRDFGOEUxMUVCQkNEOUM3MTQ5QUZBMTMyMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0OTQ0RTBGRTFGOEUxMUVCQkNEOUM3MTQ5QUZBMTMyMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ5NDRFMEZCMUY4RTExRUJCQ0Q5QzcxNDlBRkExMzIwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ5NDRFMEZDMUY4RTExRUJCQ0Q5QzcxNDlBRkExMzIwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgG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" height="90"></a><p><a href="https://atoms.com/df">Atoms Everyday Shoe</a> — now in Navy Blue, Forest Green, and Classic Yellow.</p></div></div><div id="Main"><dl class="linkedlist tallenough"><dt><a href="https://www.bloomberg.com/news/articles/2020-06-02/zoom-transforms-hype-into-huge-jump-in-sales-customers">Zoom, Still Shitting the Bed</a></dt><dd><p>Nico Grant, reporting for Bloomberg<sup>*</sup> on Zoom’s growth and CEO Eric Yuan’s plans for truly private encryption:</p><blockquote><p>Corporate clients will get access to Zoom’s end-to-end encryption service now being developed, but Yuan said free users won’t enjoy that level of privacy, which makes it impossible for third parties to decipher communications.</p><p>“Free users for sure we don’t want to give that because we also want to work together with FBI, with local law enforcement in case some people use Zoom for a bad purpose,” Yuan said on the call.</p></blockquote><p>It should go without saying that it’s bullshit that communication platforms should eschew end-to-end encryption to make snooping easier for law enforcement. So Zoom is already on the wrong side here. Also, not really a great week to come out on the side of either local or federal law enforcement. Read the room.</p><p>But it is genuinely nourishing to my soul to consider the premise that corporate clients are wholly separate from the “some people” who might “use Zoom for a bad purpose”. I mean that is truly delicious. Thank you, Eric Yuan, for providing a dose of levity in a dark week.</p><p><small>* There’s a lot going on but I haven’t forgotten about <a href="https://daringfireball.net/linked/2019/10/07/bloombergs-big-crap">the colossal “Big Hack” fuck-up</a> that continues to mar Bloomberg’s institutional journalistic integrity.</small></p><p class="smallprint">★ <em>Saturday, 6 June 2020</em></p></dd></dl><div id="Footer"><form id="SiteSearch" action="https://daringfireball.net/search" method="get" style="margin-bottom:2.5em"><div><input name="q" type="text" value style="margin-right:8px;width:66%"> <input type="submit" value="Search"></div></form><p class="smallprint"><a href="https://daringfireball.net/preferences/" title="Customize the font size and presentation options for this web site.">Display Preferences</a><br><br>Copyright © 2002–2020 The Daring Fireball Company LLC.</p></div><script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-593949-1"]),_gaq.push(["_gat._anonymizeIp"]),_gaq.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(t,a)}()</script></div></div></body></html>
